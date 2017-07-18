@@ -8,6 +8,13 @@ const apiUsers        = require('./api/users'); //Endpoints relacionados al User
 const app = express();
 const db  = levelup('./api/users', {valueEncoding: 'json'});
 
+
+//tratando de enlazar materialize
+var path = require("path");
+app.use('/static', express.static(path.join(__dirname,'node_modules')));
+app.use('/static', express.static(path.join(__dirname,'public')));
+// --------------------------------------
+
 const format = morganjson({
   short: ':method :url :status',
   length: ':res[content-length]',

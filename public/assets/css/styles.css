@@ -1,0 +1,16 @@
+div.carousel {
+  height: 800px;
+}
+
+div.carousel div.carousel-item img {
+  height: 200px;
+  width: auto;
+}
+
+div.carousel div.carousel-item h2 {
+  color: #212121;
+}
+
+div.carousel div.carousel-item p {
+  color: #8f8f8f;
+}
