@@ -1,4 +1,4 @@
-const express         = require('express'); //Framework Express
+const express         = require('express'); //Framework Express --- DEPENDENCIAS
 const bodyParser      = require('body-parser'); //Parsea el post para obtener objetos json en el request
 const levelup         = require('levelup'); // Base de datos
 const morgan          = require('morgan'); // Sistema de logging (muestra en la cosa los request)

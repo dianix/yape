@@ -1,16 +1,27 @@
 @import 'variables';
-div.carousel {
-    height: 800px;
-    div.carousel-item {
-        img {
-            height: 200px;
-            width: auto;
+main {
+    padding: 6rem 0 0;
+    div.carousel.carousel-slider {
+        height: 60vh !important;
+        .indicators .indicator-item {
+            background-color: $gris-bullet;
         }
-        h2 {
-            color: $gris-dark;
+        .indicators .indicator-item.active {
+            background-color: $rojo-bullet;
         }
-        p {
-            color: $gris-letra-soft;
+        div.carousel-item {
+            height: auto;
+            padding: 0 3vh;
+            img {
+                height: 30vh;
+                width: auto;
+            }
+            h2 {
+                color: $gris-dark;
+            }
+            p {
+                color: $gris-letra-soft;
+            }
         }
     }
 }
