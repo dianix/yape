@@ -2,7 +2,7 @@ const gulp = require("gulp");
 const sass = require("gulp-sass");
 
 const rutasFuente = {
-    html: './src/*.html',
+    html: './src/**/*.html',
     js: './src/assets/js/*.js',
     scss: './src/assets/scss/styles.scss'
 }
