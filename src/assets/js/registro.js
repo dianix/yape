@@ -1,7 +1,9 @@
 var cargarPagina = function () {
     //llamo elementos del dom para obtener datos
     var areaTel = $('#areaTelefono'); 
-    //console.log(areaTel);   
+    //console.log(areaTel); 
+    var termCond = $('#termCond');
+    termCond.click(validarTel); 
     areaTel.keyup(validarTel); 
 };
 
