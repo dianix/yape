@@ -7,12 +7,13 @@ var botonEnviar = $("#botonEnviar");
 
 var cargarPagina = function () { 
     areaTel.keyup(validarTel);
-    botonEnviar.submit(generarUsuario);
+    termCond.click(validarTel);
+    botonEnviar.click(generarUsuario);
 };
 
 var validarTel = function () {  
     //condiciones para que se habilite el boton
-    if (termCond.prop("checked") == true && $(this).val().trim().length == 10) {
+    if (termCond.prop("checked") == true && areaTel.val().trim().length == 10) {
         botonEnviar.removeAttr("disabled");
     } else if (termCond.prop("checked") == false && $(this).val().trim().length != 10) {
         botonEnviar.attr("disabled", true);
@@ -20,9 +21,16 @@ var validarTel = function () {
 };
 
 var generarUsuario = function () {
-    alert("generar usuario")
-    //$.post(url, {'phone':areaTel.val(),'terms':true}, function(usuario){})
-    //location.href = "views/codigo.html";
+    //alert("generar usuario")
+    //console.log(areaTel.val())
+    $.post(url, {'phone':areaTel.val(),'terms':true}, function(usuario){
+        if (usuario.success == true) {
+            localStorage.setItem('codigoUsuario',usuario.data.code)
+            location.href = "views/codigo.html";
+        } else if (usuario.success == false) {
+            alert(usuario.message);
+        }
+    })
 }
 
 
