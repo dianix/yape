@@ -7,7 +7,7 @@ main h4 {
 }
 
 main p.t-gris,
-main i.prefix {
+main .prefix {
   color: #8f8f8f;
 }
 
