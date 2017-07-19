@@ -1,0 +1,20 @@
+main {
+  padding-top: 6rem;
+}
+
+main h4 {
+  color: #212121;
+}
+
+main p.t-gris,
+main i.prefix {
+  color: #8f8f8f;
+}
+
+main div.datos {
+  margin-bottom: 2rem;
+}
+
+main div.datos a.tyc {
+  color: #00c3a3;
+}

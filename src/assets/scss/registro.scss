@@ -1,0 +1,17 @@
+@import 'variables';
+main {
+    padding-top: 6rem;
+    h4 {
+        color: $gris-dark;
+    }
+    p.t-gris,
+    i.prefix {
+        color: $gris-letra-soft;
+    }
+    div.datos {
+        margin-bottom: 2rem;
+        a.tyc {
+            color: $turquesa-tyc;
+        }
+    }
+}

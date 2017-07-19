@@ -4,7 +4,7 @@ const sass = require("gulp-sass");
 const rutasFuente = {
     html: './src/**/*.html',
     js: './src/assets/js/*.js',
-    scss: './src/assets/scss/styles.scss'
+    scss: './src/assets/scss/*.scss'
 }
 
 const rutasDestino = {
@@ -34,3 +34,5 @@ gulp.task("copiarCSS", function () {
         .pipe(gulp.dest(rutasDestino.css))
     console.log(rutasFuente.scss)
 });
+
+gulp.task("actualizarTodo",["copiarHTML","copiarJS","copiarCSS"]);
