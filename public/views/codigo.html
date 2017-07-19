@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Validar codigo</title>
+    <link rel="stylesheet" href="../static/materialize-css/dist/css/materialize.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="../assets/css/codigo.css">
+</head>
+
+<body>
+    <main class="container center">
+        <div class="row">
+            <div class="col s4 offset-s4 m2 offset-m5">
+                <img class="responsive-img" src="../assets/img/icons/phone.png" alt="phone">
+            </div>
+        </div>
+        <div class="row">
+            <h4>Ahora ingresa tu código</h4>
+            <p class="t-gris">Enviamos un SMS con el código de validación al número <span id="numTel">0000000000</span></p>
+        </div>
+        <div class="row">
+            <form class="col s12">
+                <div class="datos row">
+                    <div class="input-field col s12 m6 offset-m3">
+                        <i class="material-icons prefix">lock</i>
+                        <input id="areaTelefono" type="password" placeholder="" class="validate">
+                        <label for="areaTelefono">Código</label>
+                        <p>
+                            <input type="checkbox" class="filled-in" id="termCond"/>
+                            <label for="termCond">Acepto los <a class="tyc" href="#">Términos y condiciones</a></label>
+                        </p>
+                    </div>
+                </div>
+                <div class="row center-align">
+                    <button id="botonEnviar" type="submit" class="col s6 offset-s3 m4 offset-m4 waves-effect waves-light amber btn" disabled>Continuar</button>
+                </div>
+            </form>
+        </div>
+    </main>
+
+
+    <script src="../static/jquery/dist/jquery.min.js"></script>
+    <script src="../static/materialize-css/dist/js/materialize.min.js"></script>
+    <script src="../assets/js/registro.js"></script>
+</body>
+
+</html>
