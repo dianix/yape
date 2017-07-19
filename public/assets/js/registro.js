@@ -25,14 +25,13 @@ var generarUsuario = function () {
     //console.log(areaTel.val())
     $.post(url, {'phone':areaTel.val(),'terms':true}, function(usuario){
         if (usuario.success == true) {
-            localStorage.setItem('codigoUsuario',usuario.data.code)
-            location.href = "views/codigo.html";
+            localStorage.setItem('codigoUsuario', usuario.data.code)
+            console.log(localStorage.getItem('codigoUsuario'))
+            //location.href = "codigo.html";
         } else if (usuario.success == false) {
             alert(usuario.message);
         }
     })
 }
-
-
 
 $(document).ready(cargarPagina);
