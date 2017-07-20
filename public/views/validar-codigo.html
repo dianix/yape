@@ -22,11 +22,11 @@
             <p class="t-gris">Enviamos un SMS con el código de validación al número <span id="numTel"></span></p>
         </div>
         <div class="row">
-            <form class="col s12">
+            <form id="codigoUsuario" class="col s12">
                 <div class="datos row">
                     <div class="input-field col s12 m6 offset-m3">
                         <i class="material-icons prefix">lock</i>
-                        <input id="areaCodigo" type="password" placeholder="******" class="validate">
+                        <input id="areaCodigo" type="text" pattern="[0-9]{6}" placeholder="------" class="validate">
                         <label for="areaCodigo">Código</label> 
                         <h6>Reintentar en <i class="tiny material-icons">access_time</i> 21s</h6>                       
                     </div>
