@@ -7,7 +7,7 @@
     <title>Validar codigo</title>
     <link rel="stylesheet" href="../static/materialize-css/dist/css/materialize.min.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <link rel="stylesheet" href="../assets/css/conf-codigo.css">
+    <link rel="stylesheet" href="../assets/css/validar-codigo.css">
 </head>
 
 <body>
@@ -27,11 +27,9 @@
                     <div class="input-field col s12 m6 offset-m3">
                         <i class="material-icons prefix">lock</i>
                         <input id="areaCodigo" type="password" placeholder="******" class="validate">
-                        <label for="areaCodigo">Código</label>                        
+                        <label for="areaCodigo">Código</label> 
+                        <h6>Reintentar en <i class="tiny material-icons">access_time</i> 21s</h6>                       
                     </div>
-                </div>
-                <div class="row center-align">
-                    <button id="botonEnviar" type="submit" class="col s6 offset-s3 m4 offset-m4 waves-effect waves-light amber btn" disabled>Continuar</button>
                 </div>
             </form>
         </div>
@@ -40,7 +38,7 @@
 
     <script src="../static/jquery/dist/jquery.min.js"></script>
     <script src="../static/materialize-css/dist/js/materialize.min.js"></script>
-    <script src="../assets/js/conf-codigo.js"></script>
+    <script src="../assets/js/validar-codigo.js"></script>
 </body>
 
 </html>

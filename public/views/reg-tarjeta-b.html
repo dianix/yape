@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Registrar Tarjeta 2</title>
+    <link rel="stylesheet" href="../static/materialize-css/dist/css/materialize.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="../assets/css/reg-tarjeta-b.css">
+</head>
+
+<body>
+    <main class="container center">
+        <div class="row">
+            <div class="col s6 left-align valign-wrapper">
+                <a href="#"><i class="medium material-icons">keyboard_arrow_left</i> Volver</a>
+            </div>
+            <div class="col s6 right-align">
+                <a href="#"><i class="material-icons">help_outline</i></a>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col s4 offset-s4 m2 offset-m5">
+                <img class="responsive-img" src="../assets/img/icons/bcp-logo.png" alt="lock">
+            </div>
+        </div>
+        <div class="row">
+            <h4>Ingresa la clave de tu tarjeta</h4>
+            <p class="t-gris">Tarjeta <span>*******1234</span></p>
+        </div>
+        <div class="row">
+            <form class="col s12">
+                <div class="datos row">
+                    <div class="input-field col s12 m6 offset-m3">
+                        <i class="material-icons prefix">lock</i>
+                        <input id="areaClave" type="password" class="validate">
+                    </div>
+                </div>
+                
+                <div class="row center-align">
+                    <button id="botonEnviar" type="button" class="col s6 offset-s3 m4 offset-m4 waves-effect waves-light amber btn" disabled>registrar</button>
+                </div>
+            </form>
+        </div>
+    </main>
+
+
+    <script src="../static/jquery/dist/jquery.min.js"></script>
+    <script src="../static/materialize-css/dist/js/materialize.min.js"></script>
+    <script src="../assets/js/reg-tarjeta-b.js"></script>
+</body>
+
+</html>

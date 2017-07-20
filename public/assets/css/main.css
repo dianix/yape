@@ -1,0 +1,33 @@
+main {
+  padding: 6rem 0 0;
+}
+
+main div.carousel.carousel-slider {
+  height: 60vh !important;
+}
+
+main div.carousel.carousel-slider .indicators .indicator-item {
+  background-color: #7b7b7b;
+}
+
+main div.carousel.carousel-slider .indicators .indicator-item.active {
+  background-color: #f64552;
+}
+
+main div.carousel.carousel-slider div.carousel-item {
+  height: auto;
+  padding: 0 3vh;
+}
+
+main div.carousel.carousel-slider div.carousel-item img {
+  height: 30vh;
+  width: auto;
+}
+
+main div.carousel.carousel-slider div.carousel-item h2 {
+  color: #212121;
+}
+
+main div.carousel.carousel-slider div.carousel-item p {
+  color: #8f8f8f;
+}

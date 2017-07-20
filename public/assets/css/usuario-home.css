@@ -1,0 +1,32 @@
+body {
+  color: #fff;
+  background-color: #451e36;
+}
+
+body #saldo {
+  height: 45vh;
+  padding: 1vh 2vh;
+}
+
+body i.material-icons {
+  color: #fff;
+}
+
+body #movimientos {
+  background-color: #38052a;
+  height: 55vh;
+  padding: 1vh 2vh;
+}
+
+body #movimientos div.cabezal {
+  border-bottom: 1px solid #fff;
+}
+
+body #movimientos div.cabezal i {
+  border-radius: 50%;
+  border: 2px solid #fff;
+}
+
+body #movimientos div.botones {
+  padding-top: 5rem;
+}

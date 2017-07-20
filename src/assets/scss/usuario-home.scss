@@ -1,0 +1,27 @@
+@import 'variables';
+body {
+    color: #fff;
+    background-color: $morado-light;
+    #saldo {
+        height: 45vh;
+        padding: 1vh 2vh;
+    }
+    i.material-icons {
+        color: #fff;
+    }
+    #movimientos {
+        background-color: $morado-dark;
+        height: 55vh;
+        padding: 1vh 2vh;
+        div.cabezal {
+            border-bottom: 1px solid #fff;
+            i {
+                border-radius: 50%;
+                border: 2px solid #fff;
+            }
+        }
+        div.botones {
+            padding-top: 5rem;
+        }
+    }
+}

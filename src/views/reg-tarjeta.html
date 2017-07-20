@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Registrar Tarjeta</title>
+    <link rel="stylesheet" href="../static/materialize-css/dist/css/materialize.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="../assets/css/reg-tarjeta.css">
+</head>
+
+<body>
+    <main class="container center">
+        <div class="row right-align">
+            <a href="#"><i class="material-icons">help_outline</i></a>
+        </div>
+        <div class="row">
+            <div class="col s4 offset-s4 m2 offset-m5">
+                <img class="responsive-img" src="../assets/img/icons/bcp-logo.png" alt="lock">
+            </div>
+        </div>
+        <div class="row">
+            <h4>Registra tu tarjeta de débito BCP</h4>
+            <p class="t-gris">Por ahora sólo aceptamos cuentas de ahorro y/o corriente.</p>
+        </div>
+        <div class="row">
+            <form class="col s12">
+                <div class="datos row">
+                    <div class="input-field col s12 m6 offset-m3">
+                        <i class="material-icons prefix">credit_card</i>
+                        <input id="areaTarjeta" type="number" class="validate">
+                        <h6 class="input-field col s12 m6 offset-m3">
+                            <i class="material-icons">settings_overscan</i><a class="" href="#">Escanear tarjeta</a>
+                        </h6>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="input-field col s7 m3 offset-m3">
+                        <h6>Fecha de vencimiento</h6>
+                    </div>
+                    <div class="input-field col s2 m1">
+                        <input id="areaMes" type="number" class="validate">
+                        <label for="areaMes">Mes</label>                                                                       
+                    </div>
+                    <div class="input-field col s3 m2">
+                        <input id="areaAno" type="number" class="validate">
+                        <label for="areaAno">Año</label>                                               
+                    </div>
+                </div>
+                <div class="row center-align">
+                    <button id="botonEnviar" type="button" class="col s6 offset-s3 m4 offset-m4 waves-effect waves-light amber btn" disabled>continuar</button>
+                </div>
+            </form>
+        </div>
+    </main>
+
+
+    <script src="../static/jquery/dist/jquery.min.js"></script>
+    <script src="../static/materialize-css/dist/js/materialize.min.js"></script>
+    <script src="../assets/js/reg-tarjeta.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Datos</title>
+    <link rel="stylesheet" href="../static/materialize-css/dist/css/materialize.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="../assets/css/datos-usuario.css">
+</head>
+
+<body>
+    <main class="container center">
+        <div class="row">
+            <div class="col s4 offset-s4 m2 offset-m5">
+                <img class="responsive-img" src="../assets/img/icons/lockone.png" alt="lock">
+            </div>
+        </div>
+        <div class="row">
+            <h4>Crea tu usuario Yape</h4>
+            <p class="t-gris">Ingresa un nombre, email y clave de usuario</p>
+        </div>
+        <div class="row">
+            <form class="col s12">
+                <div class="datos row">
+                    <div class="input-field col s12 m6 offset-m3">
+                        <i class="material-icons prefix">face</i>
+                        <input id="areaNombre" type="text" placeholder="Nombre" class="validate">
+                        <label for="areaNombre">Nombre</label>
+                    </div>
+                    <div class="input-field col s12 m6 offset-m3">
+                        <i class="material-icons prefix">email</i>
+                        <input id="areaCorreo" type="email" placeholder="correo@ejemplo.com" class="validate">
+                        <label for="areaCorreo">Correo</label>
+                    </div>
+                    <div class="input-field col s12 m6 offset-m3">
+                        <i class="material-icons prefix">lock</i>
+                        <input id="areaContrasena" type="password" placeholder="Ingresa clave de 6 dígitos" class="validate">
+                        <label for="areaContrasena">Contraseña</label>
+                        <h6>Cuida esta clave como oro, es tu acceso a Yape.</h6>
+                    </div>
+                </div>
+                <div class="row center-align">
+                    <button id="botonEnviar" type="button" class="col s6 offset-s3 m4 offset-m4 waves-effect waves-light amber btn" disabled>crear cuenta</button>
+                </div>
+            </form>
+        </div>
+    </main>
+
+
+    <script src="../static/jquery/dist/jquery.min.js"></script>
+    <script src="../static/materialize-css/dist/js/materialize.min.js"></script>
+    <script src="../assets/js/datos-usuario.js"></script>
+</body>
+
+</html>

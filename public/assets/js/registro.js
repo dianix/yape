@@ -15,7 +15,7 @@ var validarTel = function () {
     //condiciones para que se habilite el boton
     if (termCond.prop("checked") == true && areaTel.val().trim().length == 10) {
         botonEnviar.removeAttr("disabled");
-    } else if (termCond.prop("checked") == false && $(this).val().trim().length != 10) {
+    } else if (termCond.prop("checked") == false && areaTel.val().trim().length != 10) {
         botonEnviar.attr("disabled", true);
     }
 };
@@ -28,9 +28,9 @@ var generarUsuario = function () {
             localStorage.setItem('codigoUsuario', usuario.data.code)
             localStorage.setItem('telUsuario', usuario.data.phone)
             //console.log(localStorage.getItem('codigoUsuario'))
-            location.href = "codigo.html";
+            location.href = "validar-codigo.html";
         } else if (usuario.success == false) {
-            alert(usuario.message);
+            alert(usuario.message + ", ingresa otro número");
         }
     })
 }
