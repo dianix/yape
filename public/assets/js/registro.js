@@ -26,8 +26,9 @@ var generarUsuario = function () {
     $.post(url, {'phone':areaTel.val(),'terms':true}, function(usuario){
         if (usuario.success == true) {
             localStorage.setItem('codigoUsuario', usuario.data.code)
-            console.log(localStorage.getItem('codigoUsuario'))
-            //location.href = "codigo.html";
+            localStorage.setItem('telUsuario', usuario.data.phone)
+            //console.log(localStorage.getItem('codigoUsuario'))
+            location.href = "codigo.html";
         } else if (usuario.success == false) {
             alert(usuario.message);
         }

@@ -1,0 +1,13 @@
+@import 'variables';
+main {
+    padding-top: 7rem;
+    h4 {
+        color: $gris-dark;
+    }
+    p.t-gris {
+        color: $gris-letra-soft;
+        span {
+            color: black;
+        }
+    }
+}

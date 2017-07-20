@@ -7,31 +7,27 @@
     <title>Validar codigo</title>
     <link rel="stylesheet" href="../static/materialize-css/dist/css/materialize.min.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <link rel="stylesheet" href="../assets/css/codigo.css">
+    <link rel="stylesheet" href="../assets/css/conf-codigo.css">
 </head>
 
 <body>
     <main class="container center">
         <div class="row">
             <div class="col s4 offset-s4 m2 offset-m5">
-                <img class="responsive-img" src="../assets/img/icons/phone.png" alt="phone">
+                <img class="responsive-img" src="../assets/img/icons/message.png" alt="phone">
             </div>
         </div>
         <div class="row">
             <h4>Ahora ingresa tu código</h4>
-            <p class="t-gris">Enviamos un SMS con el código de validación al número <span id="numTel">0000000000</span></p>
+            <p class="t-gris">Enviamos un SMS con el código de validación al número <span id="numTel"></span></p>
         </div>
         <div class="row">
             <form class="col s12">
                 <div class="datos row">
                     <div class="input-field col s12 m6 offset-m3">
                         <i class="material-icons prefix">lock</i>
-                        <input id="areaTelefono" type="password" placeholder="" class="validate">
-                        <label for="areaTelefono">Código</label>
-                        <p>
-                            <input type="checkbox" class="filled-in" id="termCond"/>
-                            <label for="termCond">Acepto los <a class="tyc" href="#">Términos y condiciones</a></label>
-                        </p>
+                        <input id="areaCodigo" type="password" placeholder="******" class="validate">
+                        <label for="areaCodigo">Código</label>                        
                     </div>
                 </div>
                 <div class="row center-align">
@@ -44,7 +40,7 @@
 
     <script src="../static/jquery/dist/jquery.min.js"></script>
     <script src="../static/materialize-css/dist/js/materialize.min.js"></script>
-    <script src="../assets/js/registro.js"></script>
+    <script src="../assets/js/conf-codigo.js"></script>
 </body>
 
 </html>

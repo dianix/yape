@@ -1,0 +1,15 @@
+main {
+  padding-top: 7rem;
+}
+
+main h4 {
+  color: #212121;
+}
+
+main p.t-gris {
+  color: #8f8f8f;
+}
+
+main p.t-gris span {
+  color: black;
+}
