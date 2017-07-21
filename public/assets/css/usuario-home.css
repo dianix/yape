@@ -23,6 +23,7 @@ body i.material-icons.boton {
 body #movimientos {
   background-color: #38052a;
   height: 60%;
+  padding-bottom: 2rem;
 }
 
 body #movimientos div.cabezal {
