@@ -1,21 +1,28 @@
 body {
+  height: 100%;
   color: #fff;
   background-color: #451e36;
 }
 
-body #saldo {
-  height: 45vh;
-  padding: 1vh 2vh;
+body section {
+  padding: 2rem;
 }
 
-body i.material-icons {
+body #saldo {
+  height: 40%;
+}
+
+body #saldo a {
+  color: #00c3a3;
+}
+
+body i.material-icons.boton {
   color: #fff;
 }
 
 body #movimientos {
   background-color: #38052a;
-  height: 55vh;
-  padding: 1vh 2vh;
+  height: 60%;
 }
 
 body #movimientos div.cabezal {
@@ -28,5 +35,5 @@ body #movimientos div.cabezal i {
 }
 
 body #movimientos div.botones {
-  padding-top: 5rem;
+  padding-top: 3rem;
 }

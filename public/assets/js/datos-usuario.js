@@ -1,5 +1,7 @@
+var areaNombre = $("#areaNombre")
+
 var cargarPagina = function(){
-   alert("Datos usuario")
+  
 };
 
 

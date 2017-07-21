@@ -1,18 +1,23 @@
 @import 'variables';
 body {
+    height: 100%;
     color: #fff;
     background-color: $morado-light;
-    #saldo {
-        height: 45vh;
-        padding: 1vh 2vh;
+    section {
+        padding: 2rem;
     }
-    i.material-icons {
+    #saldo {
+        height: 40%;
+        a {
+            color: $turquesa-tyc;
+        }
+    }
+    i.material-icons.boton {
         color: #fff;
     }
     #movimientos {
         background-color: $morado-dark;
-        height: 55vh;
-        padding: 1vh 2vh;
+        height: 60%;
         div.cabezal {
             border-bottom: 1px solid #fff;
             i {
@@ -21,7 +26,7 @@ body {
             }
         }
         div.botones {
-            padding-top: 5rem;
+            padding-top: 3rem;
         }
     }
 }

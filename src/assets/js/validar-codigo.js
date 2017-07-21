@@ -27,7 +27,7 @@ var recibirCodigo = function () {
 var validarCodigo = function (codigoUsuario, codigoGenerado) {
     if (codigoUsuario == codigoGenerado) {
         console.log("el cod es igual")
-        //location.href = "datos-usuario.html";
+        location.href = "datos-usuario.html";
     } else if (codigoUsuario != codigoGenerado) {
         console.log("el cod NO es igual")
         generarCodigoNuevo();
