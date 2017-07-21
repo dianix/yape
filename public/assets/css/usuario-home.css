@@ -4,12 +4,12 @@ body {
   background-color: #451e36;
 }
 
-body section {
-  padding: 2rem;
-}
-
 body #saldo {
   height: 40%;
+}
+
+body #saldo div.row.right-align {
+  padding: 1rem;
 }
 
 body #saldo a {
@@ -27,6 +27,7 @@ body #movimientos {
 
 body #movimientos div.cabezal {
   border-bottom: 1px solid #fff;
+  padding: 1rem 1rem 0;
 }
 
 body #movimientos div.cabezal i {

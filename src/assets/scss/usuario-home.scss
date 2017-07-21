@@ -3,11 +3,12 @@ body {
     height: 100%;
     color: #fff;
     background-color: $morado-light;
-    section {
-        padding: 2rem;
-    }
+    
     #saldo {
         height: 40%;
+        div.row.right-align {
+            padding: 1rem;
+        }
         a {
             color: $turquesa-tyc;
         }
@@ -20,6 +21,7 @@ body {
         height: 60%;
         div.cabezal {
             border-bottom: 1px solid #fff;
+            padding: 1rem 1rem 0;
             i {
                 border-radius: 50%;
                 border: 2px solid #fff;
